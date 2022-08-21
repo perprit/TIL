@@ -12,8 +12,8 @@
   * JavaScript functions (props(=properties) -> React elements)
   * Good for encapsulating a part of UI that is used repetitively
 * A name of user-defined component should start with a capital letter.
-* `All React components must act like pure functions with respect to their props.`
-  * Components must not change given props.
+* Components must not changes given props.
+  > `All React components must act like pure functions with respect to their props.`
 
 # State and Lifecylcle
 
