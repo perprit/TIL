@@ -15,7 +15,7 @@
 * Components must not changes given props.
   > `All React components must act like pure functions with respect to their props.`
 
-# State and Lifecylcle
+## State and Lifecylcle
 
 * State
   * = private props that is controlled by the component class.
@@ -49,6 +49,13 @@
   * Inline `if` with conditional operator
     * `<some-condition> ? <JSX-on-true> : <JSX-on-false>`
 
+## List and Keys
+
+* Collections of elements can be built with `map()` functions.
+* `key` attribute should be assigned on the list items as an identifier (similar to that of d3.js).
+  * Usually we can use IDs of the data as keys, or index of the rendered item if stable IDs do not exist (not recommended though).
+
+
 ## Notations
 
 * browser DOM elements <-> React elements
@@ -57,4 +64,4 @@
 ## Miscellaneous
 
 * NextJS = React + server-side rendering (c.f. client-side rendering)
-
+* `arr.map(function(x) {return x * 2;});` equals to `arr.map((x) => x * 2);` in ES6.
