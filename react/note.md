@@ -14,6 +14,7 @@
 * A name of user-defined component should start with a capital letter.
 * Components must not changes given props.
   > `All React components must act like pure functions with respect to their props.`
+* Components can be "extracted" from a nested one.
 
 ## State and Lifecylcle
 
@@ -54,7 +55,12 @@
 * Collections of elements can be built with `map()` functions.
 * `key` attribute should be assigned on the list items as an identifier (similar to that of d3.js).
   * Usually we can use IDs of the data as keys, or index of the rendered item if stable IDs do not exist (not recommended though).
+  * Rule of thumb: Elements inside the `map()` call need keys.
 
+## Forms
+
+* HTML form elements maintain their own state (e.g., `type`, `name`, or `value`).
+* Those state `value` should be combined to the `state` of the component (controlled component).
 
 ## Notations
 
