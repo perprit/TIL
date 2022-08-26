@@ -61,13 +61,39 @@
 
 * HTML form elements maintain their own state (e.g., `type`, `name`, or `value`).
 * Those state `value` should be combined to the `state` of the component (controlled component).
+> It seems like react implemented those forms as components with the same names.
+* Add `name` attribute for `input` tag when controlling multiple inputs (from `event.target.name` value)
+* Using controlled components can be tedious; there's full-fledged solutions such as [Formik](https://formik.org/).
+
+
+## Lifting State up
+
+* lift the shared state up to the closes ancestor;
+  * when several components need to reflect the same chaning data
 
 ## Notations
 
 * browser DOM elements <-> React elements
-* stateful/stateless components
+* controlled/uncontrolled component
 
 ## Miscellaneous
 
 * NextJS = React + server-side rendering (c.f. client-side rendering)
 * `arr.map(function(x) {return x * 2;});` equals to `arr.map((x) => x * 2);` in ES6.
+* ES6 computed property name syntax
+```js
+
+this.setState({
+  [name]: value
+})
+
+// equals to
+
+var partialState = {};
+partialState[name] = value;
+this.setState(partialState);
+```
+
+* Solutions for rendering a large data set (with conditional rendering)
+  * [react-window](https://github.com/bvaughn/react-window)
+  * [react-virtualized](https://www.npmjs.com/package/react-virtualized)
