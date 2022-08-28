@@ -12,8 +12,9 @@
   * JavaScript functions (props(=properties) -> React elements)
   * Good for encapsulating a part of UI that is used repetitively
 * A name of user-defined component should start with a capital letter.
-* Components must not changes given props.
+* Components must not changes given `props`.
   > `All React components must act like pure functions with respect to their props.`
+  * Except for `controlled` components, where the values in `props` can be changed with functions from the ancestor, which will _set state_ of itself.
 * Components can be "extracted" from a nested one.
 
 ## State and Lifecylcle
@@ -68,8 +69,10 @@
 
 ## Lifting State up
 
-* lift the shared state up to the closes ancestor;
-  * when several components need to reflect the same chaning data
+* Rely on `the top-down data flow`,
+  * by lifting the shared state up to the closest ancestor in the form of `props` if possible.
+  * This will greatly reduce the surface area for bugs.
+  * We can inspect the `props` and `state` values with [React Developer Tools](https://github.com/facebook/react/tree/main/packages/react-devtools).
 
 ## Notations
 
