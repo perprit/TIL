@@ -74,10 +74,20 @@
   * This will greatly reduce the surface area for bugs.
   * We can inspect the `props` and `state` values with [React Developer Tools](https://github.com/facebook/react/tree/main/packages/react-devtools).
 
-## Notations
+## Composition vs. Inheritance
 
-* browser DOM elements <-> React elements
-* controlled/uncontrolled component
+* Don't need to inherit classes in React. Use composition instead, with something like `props.children`.
+  * `props.children` in a component contains anything inside it.
+* If you need multiple _holes_ for children components, add custom attributes for each of it.
+
+## Web Appliciation Building Process using React
+
+> TODO
+1. Break the UI into a component hierarchy
+2. Build a static version in React
+3. Identify the minimal (but complete) representation of UI State
+4. Identify where your state should live
+5. Add inverse data flow
 
 ## Miscellaneous
 
