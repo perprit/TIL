@@ -110,3 +110,17 @@ this.setState(partialState);
 * Solutions for rendering a large data set (with conditional rendering)
   * [react-window](https://github.com/bvaughn/react-window)
   * [react-virtualized](https://www.npmjs.com/package/react-virtualized)
+
+---
+
+# [Create React App](https://github.com/facebook/create-react-app)
+
+## Prerequisite
+
+* `node.js`
+  * JavaScript runtime environment. executes JS code outside of a web browser
+* `npm`
+  * A package manager for modules based on `node.js`
+* `npx` (node package manager)
+  * A tool installed along with `npm@5.2.0`
+
