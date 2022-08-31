@@ -119,8 +119,8 @@ this.setState(partialState);
 
 * `node.js`
   * JavaScript runtime environment. executes JS code outside of a web browser
-* `npm`
+* `npm` (node package manager)
   * A package manager for modules based on `node.js`
-* `npx` (node package manager)
+* `npx` (node package _execute_)
   * A tool installed along with `npm@5.2.0`
 
