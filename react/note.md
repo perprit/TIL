@@ -124,3 +124,15 @@ this.setState(partialState);
 * `npx` (node package _execute_)
   * A tool installed along with `npm@5.2.0`
 
+## Quick Start
+
+* No need to install or configure tools like webpack or Babel
+
+```bash
+npx create-react-app my-app
+cd my-app
+npm start
+
+# Check http://localhost:3000/
+```
+~~쩐다~~
