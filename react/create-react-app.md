@@ -27,3 +27,13 @@ npm start
   * `public/index.html`
   * `src/index.js`
 * Must put JS and CSS files inside `src` directory, otherwise webpack won't see them.
+
+## Available Scripts
+
+```js
+npm start  // runs the app in the dev. mode (http://localhost:3000)
+npm test  // launches the test runner
+npm run build  // builds the app for prod. mode (into `build` folder)
+npm run eject  // one-way operation; remove the single build dependency from the project
+
+```
